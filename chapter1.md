@@ -71,11 +71,11 @@ python中的里列表类似于java中的list。
 | 方法名称 | 含义 |
 | :--- | :--- |
 | dict.clear\(\) | 清除字典的内容 |
-| **dict.fromkeys\(seq\[, val\]\)** | **创建一个新字典，以序列 seq 中元素做字典的键，val 为字典所有键对应的初始值** |
+| **dict.fromkeys\(seq\[, val\]\)** | **创建一个新字典，以序列 seq 中元素做字典的键，val 为字典所有键对应的初始值，所有的键的值都是val** |
 | dict.has\_key\(key\) | 判断字典中是否包含key的键 |
 | **dict.items\(\)** | **返回（k,v）组成的元组** |
-| dict.keys\(\) | 以列表返回一个字典所有键 |
-| dict.pop\(key\) | 删除指定的key |
+| **dict.keys\(\)** | **以列表返回一个字典所有键** |
+| dict.pop\(key\) | 删除指定的key，并返回该key对应的value |
 
 ## python中的IO操作
 
@@ -85,7 +85,7 @@ raw\_input\(\)函数从标准输入读取一行，并返回一个字符串
 
 **input\(\)函数接受一个python函数表达式，并将结果返回**
 
-_请输入：\[x\*5 for x in range\(2,10,2\)\]    
+_请输入：\[x\*5 for x in range\(2,10,2\)\]      
 _
 
 _你输入的内容是:  \[10, 20, 30, 40\]_
